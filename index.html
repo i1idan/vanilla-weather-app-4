@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather App</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="weatherBox">
+            <form action="/submit" class="weather-search">
+                <input class="weatherInput" type="text" placeholder="Type a City ..">
+                <input class="weatherSearch" type="submit" value="Search">
+                <!-- <input class="currentLocation" type="submit" value="Current" /> -->
+
+            </form>
+
+            <div class="city">
+                <span class="cityName"><strong> Tehran </strong></span>
+                <p class="time">Last Updated: Sun 15:50</p>
+                <p id="weather">few clouds</p><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <img id="icon" src="http://openweathermap.org/img/wn/02d@2x.png" alt="few clouds">
+                            <p id="degree">
+                                <strong id="temperature"><strong> 28 </strong></strong>
+                                <span class="units">
+                                    <a href="#" id="celsius-link" class="active">°C</a> |
+                                    <a href="#" id="fahrenheit-link">°F</a></span>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <div class="information">
+
+                                <p id="Wind">Wind: 2.06km/h</p>
+                                <p id="Humidity">Humidity: 15%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-forecast">
+                <div class="row weather-forecast-row">
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Sun</div>
+                        <img style="filter:hue-rotate(280deg);" src="http://openweathermap.org/img/wn/01d@2x.png" alt=""
+                            width="62">
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max"> 28° </span>
+                            <span class="weather-forecast-temperature-min"> 22° </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Mon</div>
+                        <img style="filter:hue-rotate(280deg);" src="http://openweathermap.org/img/wn/01d@2x.png" alt=""
+                            width="62">
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max"> 27° </span>
+                            <span class="weather-forecast-temperature-min"> 21° </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Tue</div>
+                        <img style="filter:hue-rotate(280deg);" src="http://openweathermap.org/img/wn/04d@2x.png" alt=""
+                            width="62">
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max"> 27° </span>
+                            <span class="weather-forecast-temperature-min"> 21° </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Wed</div>
+                        <img style="filter:hue-rotate(280deg);" src="http://openweathermap.org/img/wn/04d@2x.png" alt=""
+                            width="62">
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max"> 27° </span>
+                            <span class="weather-forecast-temperature-min"> 21° </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Thu</div>
+                        <img style="filter:hue-rotate(280deg);" src="http://openweathermap.org/img/wn/01d@2x.png" alt=""
+                            width="62">
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max"> 26° </span>
+                            <span class="weather-forecast-temperature-min"> 20° </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer"> <a href="https://github.com/sdaz9087/vanilla-weather-app-4.git"> Open Source Code </a> by Sadaf
+        H
+        💜</div>
+
+    <script src="src/index.js"></script>
+
+
+
+</body>
+
+</html>

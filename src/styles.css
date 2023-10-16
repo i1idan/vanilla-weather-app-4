@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  background-color: #ff8dc6;
+  color: rgb(3, 3, 3);
+}
+
+.weatherBox {
+  border: 5px solid;
+  padding: 50px;
+  border-radius: 10px;
+  border-color: #fdadf9;
+  width: 70%;
+  height: 50%;
+  display: block;
+  margin: 30px auto;
+  box-shadow: 1px 1px 25px rgb(248, 168, 241);
+}
+.weatherInput {
+  padding: 15px;
+  width: 70%;
+  box-shadow: 5px 5px 5px rgb(255, 164, 202);
+}
+.weatherSearch {
+  padding: 15px 30px;
+  background-color: #ff4a8f;
+  border: solid;
+  color: #f7e8f6;
+  border-color: #f7e8f6;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 25%;
+  box-shadow: 1px 1px 25px rgb(255, 89, 172);
+  border: 5px solid;
+  border-color: #ff86b4;
+}
+.weatherSearch:hover {
+  cursor: pointer;
+  background-color: #e5b0ea;
+}
+.currentLocation {
+  padding: 15px 25px;
+  background-color: #bd83ce;
+  border: solid;
+  color: #f7e8f6;
+  border-color: #f7e8f6;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.currentLocation:hover {
+  cursor: pointer;
+  background-color: #e5b0ea;
+}
+.city {
+  font-size: 14px;
+  margin: 0px auto;
+}
+.cityName {
+  font-size: 32px;
+  margin: 0 auto;
+}
+#degree {
+  display: inline;
+  /* font-size: 16px; */
+}
+#temperature {
+  font-size: 32px;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #e5b0ea;
+  text-decoration: none;
+}
+a {
+  display: inline;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+#Wind {
+}
+
+#Humidity {
+}
+
+#icon {
+  filter: hue-rotate(280deg);
+}
+.footer {
+  text-align: center;
+}
+
+.information {
+  margin: 30px auto;
+}
+
+.units {
+  font-size: 16px;
+}
+
+.units .active {
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+  color: white;
+  /* border-color: #bd83ce;
+  box-shadow: 1px 1px 10px darkviolet;
+  border: 2px solid; */
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+  color: white;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+  color: white;
+}
